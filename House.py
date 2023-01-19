@@ -24,7 +24,7 @@ Y=df['MEDV']
 # Header of Specify Input Parameters
 st.sidebar.header('Specify Input Parameters')
 
-CON = st.sidebar.slider('concha e su mare',float(X.CRIM.min()), float(X.CRIM.max()), float(X.CRIM.mean()))
+CON = st.sidebar.slider('Parametro que quieras', float(X.CRIM.min()), float(X.CRIM.max()), float(X.CRIM.mean()))
 
 def user_input_features():
     CRIM = st.sidebar.slider('CRIM', float(X.CRIM.min()), float(X.CRIM.max()), float(X.CRIM.mean()))
